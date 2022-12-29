@@ -1,0 +1,119 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: Arial, sans-serif;
+  background-image: url("../img/bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.main {
+  min-height: 100vh;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.container {
+  max-width: 620px;
+  padding: 0 10px;
+  margin: 0 auto;
+}
+
+.slider {
+  padding: 20px 0;
+}
+
+/* CONTENT */
+.slider__content-list {
+  margin-bottom: 20px;
+}
+
+.slider__content-item {
+  display: none;
+  overflow: hidden;
+  background-color: lightgreen;
+  padding: 20px;
+  border-radius: 20px;
+  box-shadow: 0px 0px 10px lightgreen;
+}
+
+.slider__content-img {
+  width: 100%;
+  margin-bottom: 10px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+
+.slider__content-text {
+  text-align: center;
+  line-height: 1.5em;
+  color: darkgreen;
+}
+
+.show {
+  display: block;
+}
+
+/* BREADCRUMBS */
+
+.slider__breadcrumbs-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.slider__breadcrumbs-item {
+  width: 80px;
+  border-radius: 50%;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  border: 3px solid lightgreen;
+  box-shadow: 0px 0px 20px lightgreen;
+  transition: border 0.5s, transform 0.5s;
+}
+
+.slider__breadcrumbs-item:hover {
+  border-color: darkgreen;
+  transform: scale(1.2);
+}
+
+.slider__breadcrumbs-item:not(:last-child) {
+  margin-right: 20px;
+}
+
+.slider__breadcrumbs-img {
+  height: 100%;
+  cursor: pointer;
+}
+
+/* BUTTONS */
+
+.slider__control-wrapper {
+  position: relative;
+}
+
+.slider__buttons-btn {
+  border: solid lightgreen;
+  border-width: 0 8px 8px 0;
+  padding: 8px;
+  display: inline-block;
+  background: none;
+  cursor: pointer;
+  transition: border 0.5s;
+  position: absolute;
+  top: 29px;
+}
+.slider__buttons-btn:hover {
+  border-color: darkgreen;
+}
+.slider__buttons-btn--left {
+  transform: rotate(135deg);
+  left: 54px;
+}
+.slider__buttons-btn--right {
+  transform: rotate(-45deg);
+  right: 54px;
+}

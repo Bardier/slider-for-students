@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="./style/reset.css" />
+    <link rel="stylesheet" href="./style/style.css" />
+    <title>Slider</title>
+  </head>
+  <body>
+    <div class="main">
+      <div class="container">
+        <div class="slider">
+          <ul class="slider__content-list">
+            <li class="slider__content-item show" data-slider="slid-1">
+              <img
+                src="./img/panda-1.jpg"
+                alt="slide-1"
+                class="slider__content-img"
+              />
+              <p class="slider__content-text">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab,
+                aut beatae dolorem enim eveniet ex explicabo facere itaque
+                labore laborum maxime nemo nisi pariatur porro quis quisquam sit
+                ullam vitae?
+              </p>
+            </li>
+            <li class="slider__content-item" data-slider="slid-2">
+              <img
+                src="./img/panda-2.jpg"
+                alt="slide-2"
+                class="slider__content-img"
+              />
+              <p class="slider__content-text">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad
+                asperiores beatae dolores doloribus et itaque mollitia nihil
+                nostrum sequi suscipit tempore, veniam voluptas voluptates?
+                Doloremque ea labore necessitatibus praesentium ratione!
+              </p>
+            </li>
+            <li class="slider__content-item" data-slider="slid-3">
+              <img
+                src="./img/panda-3.jpg"
+                alt="slide-3"
+                class="slider__content-img"
+              />
+              <p class="slider__content-text">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Corporis esse magni qui sunt temporibus voluptas. Accusantium,
+                animi aperiam asperiores corporis culpa eaque esse laborum
+                magnam quod, reiciendis sed sit veniam!
+              </p>
+            </li>
+          </ul>
+          <div class="slider__control-wrapper">
+            <ul class="slider__breadcrumbs-list">
+              <li class="slider__breadcrumbs-item" data-slider="slid-1">
+                <img
+                  src="./img/panda-1.jpg"
+                  alt="slide-1"
+                  class="slider__breadcrumbs-img"
+                />
+              </li>
+              <li class="slider__breadcrumbs-item" data-slider="slid-2">
+                <img
+                  src="./img/panda-2.jpg"
+                  alt="slide-2"
+                  class="slider__breadcrumbs-img"
+                />
+              </li>
+              <li class="slider__breadcrumbs-item" data-slider="slid-3">
+                <img
+                  src="./img/panda-3.jpg"
+                  alt="slide-3"
+                  class="slider__breadcrumbs-img"
+                />
+              </li>
+            </ul>
+            <ul class="slider__buttons-list">
+              <li class="slider__buttons-item">
+                <button
+                  class="slider__buttons-btn slider__buttons-btn--left"
+                ></button>
+              </li>
+              <li class="slider__buttons-item">
+                <button
+                  class="slider__buttons-btn slider__buttons-btn--right"
+                ></button>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="./slider.js"></script>
+  </body>
+</html>
