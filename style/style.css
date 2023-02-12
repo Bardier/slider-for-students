@@ -40,6 +40,7 @@ body {
 .slider__content-img {
   width: 100%;
   margin-bottom: 10px;
+  max-height: 315px;
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
 }
